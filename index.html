@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CMSish</title>
+    <meta name="author" content="name">
+    <meta name="description" content="description here">
+    <meta name="keywords" content="keywords,here">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="style/style.css" type="text/css">
+  </head>
+  <body>
+    <script id="body" type="text/x-handlebars-template">
+      <!-- All your normal HTML goes in here -->
+
+      <div class="fullwidth">
+        <p>Hello. This is the worlds easiest CMS. It uses google spreadsheets to hold your data. It works out of the box and does not require you to compile any damn thing.</p>
+        <p>Here are some fields of data:</p>
+        {{Title}}<br>
+        {{Introtext}}<br>
+        {{Phone}}<br>
+        {{Testimonial}}<br>
+      </div>
+
+      <!-- End of all your normal HTML -->
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.0/handlebars.min.js" type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+    <script src="config.js" type="text/javascript"></script>
+    <script src="js/utility/tabletop.js" type="text/javascript"></script>
+    <script src="js/utility/handlebars.js" type="text/javascript"></script>
+  </body>
+</html>
