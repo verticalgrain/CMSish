@@ -13,9 +13,9 @@ CMSish is the most simple CMS in the world.
 ```
 
 
-###Step 3: Initiate cmsish with `new CMSish.init('GOOGLE_SPREADSHEET_URL'); ` for example: 
+###Step 3: Initiate cmsish and pass it the url to your google spreadsheet:
 ```
-var myCms = new CMSish.init('https://docs.google.com/spreadsheets/d/1G3RpoOuzoGA0VoG1Whei3PAvoyvbeaMR-2EPazT_f1g/pubhtml')
+var myCms = new CMSish.init('GOOGLE_SPREADSHEET_URL');
 ```
 
 
