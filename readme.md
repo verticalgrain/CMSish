@@ -4,7 +4,7 @@ CMSish is the most simple CMS in the world.
 
 
 ###Step 1: Create a google spreadsheet and enter some data. Select "File / Publish to the web" and copy the url in the pop-up.
-[![spreadsheet.png](https://s10.postimg.org/sxitzsord/spreadsheet.png)](https://postimg.org/image/bwzxr4bpx/)
+![spreadsheet.png](https://s10.postimg.org/sxitzsord/spreadsheet.png)
 
 
 ###Step 2: Include cmsish.min.js in your project.
