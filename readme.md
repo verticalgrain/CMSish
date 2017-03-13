@@ -7,7 +7,7 @@ cmsish is the most simple CMS in the world. Demo: [http://verticalgraindesign.co
 ![spreadsheet.png](https://image.ibb.co/fy7swF/spreadsheet.png)
 
 
-###Step 2: Include cmsish.min.js in your project.
+###Step 2: Include cmsish.min.js in your project (found in dist/cmsish.min.js).
 ```
 <script src="cmsish.min.js" type="text/javascript"></script>
 ```
@@ -15,7 +15,9 @@ cmsish is the most simple CMS in the world. Demo: [http://verticalgraindesign.co
 
 ###Step 3: Initiate cmsish and pass it the url to your google spreadsheet:
 ```
+<script type="text/javascript">
 var myCms = new cmsish.init('GOOGLE_SPREADSHEET_URL');
+</script>
 ```
 
 
