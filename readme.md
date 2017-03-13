@@ -33,8 +33,19 @@ var myCms = new cmsish.init('GOOGLE_SPREADSHEET_URL');
 
 ###Step 5: Add handlebars template tags to your markup, using the column names from the spreadsheet as the template tags
 ```
-<h1>{{Title}}</h1>
-<p>{{Introtext}}</p>
-<p>{{Phone}}</p>
-<p>{{Testimonial}}</p>
+<body>
+  <script id="entry-template" type="text/x-handlebars-template">
+    <!-- All your HTML goes between these script tags -->
+
+    <h1>{{Title}}</h1>
+    
+    <p>{{Introtext}}</p>
+    
+    <p>{{Phone}}</p>
+    
+    <p>{{Testimonial}}</p>
+
+    <!-- Stop your HTML now -->
+  </script>
+</body>
 ```
