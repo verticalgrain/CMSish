@@ -1,0 +1,7 @@
+body,html {
+  margin: 0;
+}
+p {
+  display: block;
+  margin-bottom: 20px;
+}
