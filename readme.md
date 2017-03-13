@@ -1,6 +1,6 @@
-#CMSish
+#cmsish
 
-CMSish is the most simple CMS in the world.
+cmsish is the most simple CMS in the world.
 
 
 ###Step 1: Create a google spreadsheet and enter some data. Select "File / Publish to the web" and copy the url in the pop-up.
@@ -15,7 +15,7 @@ CMSish is the most simple CMS in the world.
 
 ###Step 3: Initiate cmsish and pass it the url to your google spreadsheet:
 ```
-var myCms = new CMSish.init('GOOGLE_SPREADSHEET_URL');
+var myCms = new cmsish.init('GOOGLE_SPREADSHEET_URL');
 ```
 
 

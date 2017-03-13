@@ -1,4 +1,4 @@
-var CMSish = (function(){
+var cmsish = (function(){
   'use strict';
 
   function init(googleSpreadsheetUrl) {
