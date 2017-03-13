@@ -1,6 +1,6 @@
 #CMSish
 
-###CMSish is a super, duper, simple CMS.
+###CMSish is the most simple CMS in the world.
 
 ###CMSish does not require you to compile a damn thing or install any damn dependencies - it works out of the box.
 

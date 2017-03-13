@@ -4,8 +4,7 @@ app.tabletop = (function($){
   function init() {
     Tabletop.init({ 
       key: app.config.vars.spreadsheetUrl,
-      callback: app.handlebars.loadData,
-      simpleSheet: true 
+      callback: app.handlebars.loadData
     })
   }
 
