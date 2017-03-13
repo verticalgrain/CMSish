@@ -8,7 +8,9 @@ CMSish is the most simple CMS in the world.
 
 
 ###Step 2: Include cmsish.min.js in your project.
+```
 <script src="cmsish.min.js" type="text/javascript"></script>
+```
 
 
 ###Step 3: Initiate cmsish like so: 
