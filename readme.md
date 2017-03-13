@@ -1,6 +1,6 @@
 #cmsish
 
-cmsish is the most simple CMS in the world.
+cmsish is the most simple CMS in the world. Demo: [http://verticalgraindesign.com/CMSish/demo/](http://verticalgraindesign.com/CMSish/demo)
 
 
 ###Step 1: Create a google spreadsheet and enter some data. Select "File / Publish to the web" and copy the url in the pop-up.
