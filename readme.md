@@ -47,6 +47,7 @@ cmsish is the most simple CMS in the world. Demo: [http://verticalgraindesign.co
 
 
 ##Other options:
+
 ###Initiate cmsish in JS instead of with a data-spreadsheet-url attribute:
 ```
 <script type="text/javascript">
