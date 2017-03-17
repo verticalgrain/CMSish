@@ -13,18 +13,10 @@ cmsish is the most simple CMS in the world. Demo: [http://verticalgraindesign.co
 ```
 
 
-###Step 3: Initiate cmsish and pass it the url to your google spreadsheet:
-```
-<script type="text/javascript">
-var myCms = new cmsish.init('GOOGLE_SPREADSHEET_URL');
-</script>
-```
-
-
-###Step 4: In your HTML, wrap your content in a handlebars script tag by entering 
+###Step 3: In your HTML, wrap your content in handlebars script tags. Include a data attribute with the URL to your spreadsheet.
 ```
 <body>
-  <script id="entry-template" type="text/x-handlebars-template">
+  <script id="entry-template" type="text/x-handlebars-template" data-spreadsheet-url="ADD_YOUR_GOOGLE_SPREADSHEET_URL_HERE">
     <!-- All your HTML goes between these script tags -->
 
     <!-- Stop your HTML now -->
@@ -33,7 +25,7 @@ var myCms = new cmsish.init('GOOGLE_SPREADSHEET_URL');
 ```
 
 
-###Step 5: Add handlebars template tags to your markup, using the column names from the spreadsheet as the template tags
+###Step 4: Add handlebars template tags to your markup, using the column names from the spreadsheet as the template tags
 ```
 <body>
   <script id="entry-template" type="text/x-handlebars-template">
@@ -50,4 +42,14 @@ var myCms = new cmsish.init('GOOGLE_SPREADSHEET_URL');
     <!-- Stop your HTML now -->
   </script>
 </body>
+```
+
+
+
+##Other options:
+###Initiate cmsish in JS instead of with a data-spreadsheet-url attribute:
+```
+<script type="text/javascript">
+  var myCms = new cmsish.init('GOOGLE_SPREADSHEET_URL');
+</script>
 ```
