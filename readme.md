@@ -1,19 +1,20 @@
-#cmsish
+# cmsish
 
 cmsish is the most simple CMS in the world. Demo: [http://verticalgraindesign.com/CMSish/demo/](http://verticalgraindesign.com/CMSish/demo)
 
 
-###Step 1: Create a google spreadsheet and enter some data. Select "File / Publish to the web" and copy the url in the pop-up.
-![spreadsheet.png](https://image.ibb.co/fy7swF/spreadsheet.png)
+### Step 1: Create a google spreadsheet and enter some data. Select "File / Publish to the web" and copy the url in the pop-up.
+
+![cmsish_spreadsheet.png](https://s21.postimg.org/yowwjl2qf/cmsish_spreadsheet.png)
 
 
-###Step 2: Include cmsish.min.js in your project (found in dist/cmsish.min.js).
+### Step 2: Include cmsish.min.js in your project (found in dist/cmsish.min.js).
 ```
 <script src="cmsish.min.js" type="text/javascript"></script>
 ```
 
 
-###Step 3: In your HTML, wrap your content in handlebars script tags. Include a data attribute with the URL to your spreadsheet.
+### Step 3: In your HTML, wrap your content in handlebars script tags. Include a data attribute with the URL to your spreadsheet.
 ```
 <body>
   <script id="entry-template" type="text/x-handlebars-template" data-spreadsheet-url="ADD_YOUR_GOOGLE_SPREADSHEET_URL_HERE">
@@ -25,19 +26,26 @@ cmsish is the most simple CMS in the world. Demo: [http://verticalgraindesign.co
 ```
 
 
-###Step 4: Add handlebars template tags to your markup, using the column names from the spreadsheet as the template tags
+### Step 4: Add handlebars template tags to your markup, using the sheet name and column names from the spreadsheet as the template tags.
+
+For example: 
+
+{{sheet-name.column-name}}
+
+{{About-Us.Title}}
+
 ```
 <body>
   <script id="entry-template" type="text/x-handlebars-template">
     <!-- All your HTML goes between these script tags -->
 
-    <h1>{{Title}}</h1>
+    <h1>{{About-Us.Title}}</h1>
     
-    <p>{{Introtext}}</p>
+    <p>{{About-Us.Introtext}}</p>
     
-    <p>{{Phone}}</p>
+    <p>{{About-Us.Phone}}</p>
     
-    <p>{{Testimonial}}</p>
+    <p>{{About-Us.Testimonial}}</p>
 
     <!-- Stop your HTML now -->
   </script>
@@ -46,9 +54,9 @@ cmsish is the most simple CMS in the world. Demo: [http://verticalgraindesign.co
 
 
 
-##Other options:
+## Other options:
 
-###Initiate cmsish in JS instead of with a data-spreadsheet-url attribute:
+### Initiate cmsish in JS instead of with a data-spreadsheet-url attribute:
 ```
 <script type="text/javascript">
   var myCms = new cmsish.init('GOOGLE_SPREADSHEET_URL');
