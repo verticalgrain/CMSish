@@ -26,13 +26,15 @@ cmsish is the most simple CMS in the world. Demo: [http://verticalgraindesign.co
 ```
 
 
-### Step 4: Add content from the spreadsheet to your template with handlebars expressions. Handlebars expressions look like this: `{{title}}`. 
+### Step 4: Add content from the spreadsheet to your template with handlebars expressions. Handlebars expressions look like this: `{{ title }}` 
 
 Make your expressions by combining the spreadsheet sheet name and column name, separated by a period: `{{sheet-name.column-name}}`. Replace spaces with dashes, but leave the case the same as in your spreadsheet.
 
 For example:
 
+```
 {{About-Us.Title}}
+```
 
 ```
 <body>
