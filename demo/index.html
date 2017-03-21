@@ -18,18 +18,39 @@
   </head>
   <body>
 
+    <div id="content"></div>
+
     <script id="entry-template" type="text/x-handlebars-template" data-spreadsheet-url="https://docs.google.com/spreadsheets/d/1G3RpoOuzoGA0VoG1Whei3PAvoyvbeaMR-2EPazT_f1g/pubhtml">
       <!-- All your normal HTML goes in here -->
 
       <div class="fullwidth">
-        <p>Hello. This is the worlds easiest CMS. It uses google spreadsheets to hold your content and handlebars to display your content in a template.</p>
+        <h1>CMSish</h1>
+        <h2>Hello. This is the worlds easiest CMS. It uses google spreadsheets to hold your content and handlebars to display your content in a template.</h2>
         
-        <p>Here are some fields of content:</p>
+        <h4>Here are some fields of content, pulled from the "About Us" sheet of the spreadsheet:</h4>
+        <ul>
+          <li><p>Title: {{About-Us.Title}}</p></li>
+          <li><p>Introtext: {{About-Us.Introtext}}</p></li>
+          <li><p>Phone: {{About-Us.Phone}}</p></li>
+          <p>Testimonial: {{About-Us.Testimonial}}</p></li>
+        </ul>
 
-        <p>Title: {{About-Us.Title}}</p>
-        <p>Introtext: {{About-Us.Introtext}}</p>
-        <p>Phone: {{About-Us.Phone}}</p>
-        <p>Testimonial: {{About-Us.Testimonial}}</p>
+        <h4>Here is a list of items from a content type, pulled from the "Posts" sheet of the spreadsheet. Each row of the spreadsheet is an item in the list.</h4>
+
+        <ul>
+          {{#each Posts}}
+            <li>
+              <img src="{{Image}}" />
+              <p>Post title: {{Title}}</p>
+              <p>Post author: {{Author}}</p>
+              <p>Post subtitle: {{Subtitle}}</p>
+              <p>Post main content: {{Main-Content}}</p>
+              <p>Post testimonial: {{Testimonial}}</p>
+              <br/>
+              <br/>
+            </li>
+          {{/each}}
+        </ul>
       </div>
 
       <!-- End of all your normal HTML -->

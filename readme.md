@@ -5,7 +5,7 @@ cmsish is the most simple CMS in the world. Demo: [http://verticalgraindesign.co
 
 ### Step 1: Create a google spreadsheet and enter some data. Select "File / Publish to the web" and copy the url in the pop-up.
 
-![cmsish_spreadsheet.png](https://s21.postimg.org/yowwjl2qf/cmsish_spreadsheet.png)
+![cmsish_spreadsheet_screenshot.png](https://s18.postimg.org/91eg3hjnd/cmsish_spreadshet_screenshot.png)
 
 
 ### Step 2: Include cmsish.min.js in your project (found in dist/cmsish.min.js).
@@ -63,4 +63,32 @@ For example:
 <script type="text/javascript">
   var myCms = new cmsish.init('GOOGLE_SPREADSHEET_URL');
 </script>
+```
+
+### Loop through a collection. 
+
+To make a collection, create a new sheet, and add multiple rows for each column.
+
+[![image.png](https://s12.postimg.org/kthsk05lp/image.png)](https://postimg.org/image/wvd6e5eu1/)
+
+Loop through a collection with the #each helper, using the name of the sheet as the collection name:
+
+```
+{{#each Posts}}
+  <li>
+    <p>Post title: {{Title}}</p>
+    <p>Post author: {{Author}}</p>
+    <p>Post subtitle: {{Subtitle}}</p>
+    <p>Post main content: {{Main-Content}}</p>
+    <p>Post testimonial: {{Testimonial}}</p>
+    <img src="{{{Image}}}" />
+    <br/>
+  </li>
+{{/each}}
+```
+
+Access a single row of a collection by referring to it's index. Posts are zero indexed, so the first one is 0, the second 1, etc
+
+```
+Post title for post #2: {{Posts.1.Title}}
 ```

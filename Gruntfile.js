@@ -27,9 +27,9 @@ module.exports = function(grunt) {
       all: {
         files: {
           'dist/cmsish.min.js': [
-            'src/js/cmsish.js',
             'src/js/vendor/tabletop.min.js',
-            'src/js/vendor/handlebars.min.js'
+            'src/js/vendor/handlebars.min.js',
+            'src/js/cmsish.js',
           ]
         }
       }
