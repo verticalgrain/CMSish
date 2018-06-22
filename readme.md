@@ -5,7 +5,7 @@ cmsish is the most simple CMS in the world. Demo: [http://verticalgraindesign.co
 
 ### Step 1: Create a google spreadsheet and enter some data. Select "File / Publish to the web" and copy the url in the pop-up.
 
-![cmsish_spreadsheet_screenshot.png](https://s18.postimg.org/91eg3hjnd/cmsish_spreadshet_screenshot.png)
+![cmsish_spreadsheet_screenshot.png](https://verticalgrain.github.io/CMSish/demo/images/publish-to-web.png)
 
 
 ### Step 2: Include cmsish.min.js in your project (found in dist/cmsish.min.js).
@@ -69,7 +69,7 @@ For example:
 
 To make a collection, create a new sheet, and add multiple rows for each column.
 
-[![image.png](https://s12.postimg.org/kthsk05lp/image.png)](https://postimg.org/image/wvd6e5eu1/)
+![cmsish_rows.png](https://verticalgrain.github.io/CMSish/demo/images/rows.png)
 
 Loop through a collection with the #each helper, using the name of the sheet as the collection name:
 
