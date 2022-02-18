@@ -1,5 +1,7 @@
 # cmsish
 
+🔴 Unfortunately, cmsish has stopped working, since Google deprecated the API method that is used by cmsish. I'll try to find some time to create a V2 with the new google sheets API. 🔴 
+
 cmsish is the most simple CMS in the world. Demo: [https://verticalgrain.github.io/CMSish/](https://verticalgrain.github.io/CMSish/)
 
 
